@@ -112,7 +112,7 @@ class SecondPage extends StatelessWidget {
       textAlign: TextAlign.center,
     ),// Spacing between texts
     Text(
-      "  Send Feedback",
+      "Send Feedback",
       style: TextStyle(
         fontSize: 20,
         color: Colors.blue, // Blue color
