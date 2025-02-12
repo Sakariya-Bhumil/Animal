@@ -2,20 +2,22 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
 class HomePage extends StatelessWidget {
+  const HomePage({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color.fromRGBO(14, 60, 74, 1),
+      backgroundColor: const Color.fromRGBO(14, 60, 74, 1),
       appBar: AppBar(
         
         title: Row(
           children: [
             Image.asset('assets/logo.png', height: 80), // Add your logo path
-            SizedBox(width: 10),
-            Text('My App',style: TextStyle(color: Colors.white,fontSize: 18),),
+            const SizedBox(width: 10),
+            const Text('My App',style: TextStyle(color: Colors.white,fontSize: 18),),
           ],
         ),
-        backgroundColor: Color.fromRGBO(20, 46, 57, 1),
+        backgroundColor: const Color.fromRGBO(20, 46, 57, 1),
         
         
         actions: [
@@ -23,25 +25,25 @@ class HomePage extends StatelessWidget {
             onPressed: () {
               // Navigate to Home Page
             },
-            child: Text('Home', style: TextStyle(color: Colors.white)),
+            child: const Text('Home', style: TextStyle(color: Colors.white)),
           ),
           TextButton(
             onPressed: () {
               // Navigate to About Page
             },
-            child: Text('About', style: TextStyle(color: Colors.white)),
+            child: const Text('About', style: TextStyle(color: Colors.white)),
           ),
           TextButton(
             onPressed: () {
               // Navigate to Admin Page
             },
-            child: Text('Admin', style: TextStyle(color: Colors.white)),
+            child: const Text('Admin', style: TextStyle(color: Colors.white)),
           ),
           TextButton(
             onPressed: () {
               // Navigate to Course Page
             },
-            child: Text('Course', style: TextStyle(color: Colors.white)),
+            child: const Text('Course', style: TextStyle(color: Colors.white)),
           ),
           
         ],
@@ -81,7 +83,7 @@ class HomePage extends StatelessWidget {
 
         // Category Section
         // Text("Categories", style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold)),
-        SizedBox(height: 10),
+        const SizedBox(height: 10),
         // SizedBox(
         //   height: 100,
         //   child: ListView(
@@ -96,28 +98,28 @@ class HomePage extends StatelessWidget {
           children: [
             Expanded(
               child: Padding(
-                padding: EdgeInsets.all(8),
+                padding: const EdgeInsets.all(8),
                 child: Container(
-                  color: Color.fromRGBO(20, 78, 91, 1),
-                  padding: EdgeInsets.all(16),
+                  color: const Color.fromRGBO(20, 78, 91, 1),
+                  padding: const EdgeInsets.all(16),
                   
                   height: 800,
                   width: double.infinity,
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Text(
+                      const Text(
                         "Connect with a CFP® Professional for Expert Financial Planning",
                         style: TextStyle(color: Colors.white, fontSize: 18),
                         // textAlign: TextAlign.left,
                       ),
-                      SizedBox(height: 10,),
-                      Text(
+                      const SizedBox(height: 10,),
+                      const Text(
                         "Work with a certified expert to achive your finacial goals.From retirement planning to invest strategies, we provide personalized advice tailored to your needs.",
                         style: TextStyle(color: Colors.white, fontSize: 18),
                         // textAlign: TextAlign.center,
                       ),
-                      SizedBox(height: 10,),
+                      const SizedBox(height: 10,),
                       ElevatedButton(
                         // style: ElevatedButton.styleFrom(backgroundColor: Color.fromARGB(255, 218, 85, 151)),
                         style: ElevatedButton.styleFrom(
@@ -128,9 +130,9 @@ class HomePage extends StatelessWidget {
                           ),
                         onPressed: () {
                         
-                      }, child: Text("Book a free 30 min Consultation", style: TextStyle(color: const Color.fromARGB(255, 255, 255, 255)),),
+                      }, child: const Text("Book a free 30 min Consultation", style: TextStyle(color: Color.fromARGB(255, 255, 255, 255)),),
                       ),
-                      SizedBox(height: 60,),
+                      const SizedBox(height: 60,),
 
 
                       // Container(
@@ -148,7 +150,7 @@ class HomePage extends StatelessWidget {
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(20),
                               // color: Colors.amber,
-                              image: DecorationImage(
+                              image: const DecorationImage(
                                 image: AssetImage("assets/finance.png"),
                                 fit: BoxFit.cover,
                               ),
@@ -171,30 +173,30 @@ class HomePage extends StatelessWidget {
               ),
               
             ),
-            SizedBox(height: 10),
+            const SizedBox(height: 10),
             Expanded(
               child: Padding(
-                padding: EdgeInsets.all(8),
+                padding: const EdgeInsets.all(8),
                 child: Container(
-                  color: Color.fromRGBO(20, 78, 91, 1),
-                  padding: EdgeInsets.all(16),
+                  color: const Color.fromRGBO(20, 78, 91, 1),
+                  padding: const EdgeInsets.all(16),
                   height: 800,
                   width: double.infinity,
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Text(
+                      const Text(
                         "Prepare for the CFP® Exam with Confidence",
                         style: TextStyle(color: Colors.white, fontSize: 18),
                         // textAlign: TextAlign.left,
                       ),
-                      SizedBox(height: 10,),
-                      Text(
+                      const SizedBox(height: 10,),
+                      const Text(
                         "Sign up for our comprehensiv CFP® eax, prep course.Master the fundametals,tackle practice question,and build the skills needed to ace the exam.",
                         style: TextStyle(color: Colors.white, fontSize: 18),
                         // textAlign: TextAlign.center,
                       ),
-                      SizedBox(height: 10,),
+                      const SizedBox(height: 10,),
                       ElevatedButton(
                         // style: ElevatedButton.styleFrom(backgroundColor: Color.fromARGB(255, 218, 85, 151)),
                         style: ElevatedButton.styleFrom(
@@ -205,9 +207,9 @@ class HomePage extends StatelessWidget {
                           ),
                         onPressed: () {
                         
-                      }, child: Text("Sign in with Google", style: TextStyle(color: const Color.fromARGB(255, 255, 255, 255)),),
+                      }, child: const Text("Sign in with Google", style: TextStyle(color: Color.fromARGB(255, 255, 255, 255)),),
                       ),
-                      SizedBox(height: 60,),
+                      const SizedBox(height: 60,),
 
 
                       // Container(
@@ -225,7 +227,7 @@ class HomePage extends StatelessWidget {
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(20),
                               // color: Colors.amber,
-                              image: DecorationImage(
+                              image: const DecorationImage(
                                 image: AssetImage("assets/exam.png"),
                                 fit: BoxFit.cover,
                               ),

@@ -1,7 +1,6 @@
 // Flutter code for the Homepage
 import 'package:flutter/material.dart';
-import 'package:my_app/screen/Home_Page.dart';
-import 'package:my_app/screen/login_form.dart';
+import 'package:my_app/screen/second_page.dart';
 
 
 
@@ -15,7 +14,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData(primaryColor: Colors.teal),
-      home: MentorSignupPage(),
+      home: DashboardScreen(),
     );
   }
 }
