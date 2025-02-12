@@ -131,8 +131,5 @@ class MentorSignupPage extends StatelessWidget {
       ),
     );
   }
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> f95c196 (new)
+
