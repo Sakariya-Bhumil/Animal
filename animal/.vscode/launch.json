@@ -1,0 +1,13 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "C/C++ Runner: Debug Session",
+      "type": "lldb",
+      "request": "launch",
+      "args": [],
+      "cwd": "/Users/bhumilsakariya/Documents/Animal/animal/lib/screen/admin/inner_screen/case_study_page",
+      "program": "/Users/bhumilsakariya/Documents/Animal/animal/lib/screen/admin/inner_screen/case_study_page/build/Debug/outDebug"
+    }
+  ]
+}
